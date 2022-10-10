@@ -39,11 +39,9 @@ class SearchView {
 
     addHandlerSearch(handler) {
         this.parentEl = document.querySelector('.search__wrapper')
-        // this.parentEl.addEventListener('input', debounce(handler, 500))
         this.parentEl.addEventListener('input', (e) => {
             handler(e)
         })
-        // this.parentEl.addEventListener('input', alert('hello'))
         this.parentEl.addEventListener('submit', function (e) {
             e.preventDefault()
         })
